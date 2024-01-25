@@ -5,7 +5,9 @@ import {RecipeModel} from "../recipe/recipe.model";
 import {map, tap, take, exhaustMap} from "rxjs/operators";
 import {AuthService} from "../auth/auth.service";
 
-@Injectable({providedIn: 'root'})
+@Injectable({
+  providedIn: 'root'
+})
 export class DataStorageService {
   constructor(private http: HttpClient, private recipeService: RecipeService, private authService: AuthService) {
   }
