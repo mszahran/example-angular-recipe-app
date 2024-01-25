@@ -13,6 +13,7 @@ import {RecipesRoutingModule} from "./recipes-routing.module";
 
 @NgModule({
   declarations: [
+    RecipeComponent,
     RecipeListComponent,
     RecipeItemComponent,
     RecipeDetailComponent,
@@ -24,13 +25,6 @@ import {RecipesRoutingModule} from "./recipes-routing.module";
     CommonModule,
     ReactiveFormsModule,
     RecipesRoutingModule
-  ],
-  exports: [
-    RecipeListComponent,
-    RecipeItemComponent,
-    RecipeDetailComponent,
-    RecipeComponent,RecipeStartComponent,
-    RecipeEditComponent
   ]
 })
 export class RecipesModule {
