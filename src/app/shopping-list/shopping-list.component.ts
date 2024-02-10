@@ -2,6 +2,7 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {IngredientModel} from "../shared/ingredient.model";
 import {ShoppingListService} from "./shopping-list.service";
 import {Subscription} from "rxjs";
+import {LoggingService} from "../logging.service";
 
 @Component({
   selector: 'app-shopping-list',
