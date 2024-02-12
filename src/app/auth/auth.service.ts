@@ -90,8 +90,6 @@ export class AuthService {
   }
 
   autoLogout(expirationDuration: number) {
-    console.log(expirationDuration);
-
     this.tokeExpirationTimer = setTimeout(() => {
       this.logout();
     }, expirationDuration);
@@ -128,6 +126,7 @@ export class AuthService {
         errorMessage = 'Invalid credentials.';
         break;
     }
+
     return throwError(errorMessage);
   }
 }
